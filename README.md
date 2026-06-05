@@ -24,8 +24,8 @@ IA aplicada, NL2SQL, mobile, arquiteturas limpas e desenvolvimento web.
 ## **Estatísticas do GitHub**
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Sr-Ryuk&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sr-Ryuk&layout=compact&theme=dracula"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Sr-Ryuk&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&v=1"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sr-Ryuk&layout=compact&theme=dracula&v=1"/>
 </div>
 
 ## **Contato**
