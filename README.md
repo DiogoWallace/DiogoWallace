@@ -24,8 +24,13 @@ IA aplicada, NL2SQL, mobile, arquiteturas limpas e desenvolvimento web.
 ## **Estatísticas do GitHub**
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Sr-Ryuk&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&v=1"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sr-Ryuk&layout=compact&theme=dracula&v=1"/>
+  <!-- GitHub Streak (Ofensiva de Commits) -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Sr-Ryuk&theme=dracula&hide_border=true&stroke=0000&background=282A36" alt="Estatísticas de Streak de Sr-Ryuk" />
+  
+  <br><br>
+
+  <!-- GitHub Profile Summary Cards (Linguagens e Status Geral) -->
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sr-Ryuk&theme=dracula" alt="Resumo do Perfil de Sr-Ryuk" />
 </div>
 
 ## **Contato**
