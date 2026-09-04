@@ -35,4 +35,4 @@ IA aplicada, NL2SQL, mobile, arquiteturas limpas e desenvolvimento web.
 
 ## **Contato**
 
-**GitHub:** [https://github.com/Sr-Ryuk](https://github.com/DiogoWallace)
+**GitHub:** [https://github.com/DiogoWallace](https://github.com/DiogoWallace)
