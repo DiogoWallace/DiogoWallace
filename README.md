@@ -81,11 +81,15 @@ arquitetura de um jeito que o próprio repositório cobre.
 ## GitHub
 
 <div align="center">
-  <img height="165" src="https://streak-stats.demolab.com/?user=DiogoWallace&theme=dracula&hide_border=true&background=282A36" alt="Streak de commits" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=DiogoWallace&show_icons=true&theme=dracula&hide_border=true&bg_color=282A36&include_all_commits=true" alt="Estatísticas do GitHub" />
+  <img src="https://streak-stats.demolab.com/?user=DiogoWallace&theme=dracula&hide_border=true&background=282A36" alt="Streak de commits" />
+
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DiogoWallace&theme=dracula" alt="Resumo do perfil" />
+
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DiogoWallace&theme=dracula" alt="Linguagens mais usadas, por commit" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DiogoWallace&theme=dracula" alt="Estatisticas gerais" />
 </div>
 
 ---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](LINKEDIN_AQUI)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:EMAIL_AQUI)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diogo-wallace-043904273/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:diogo.wallaceferreira@gmail.com)
