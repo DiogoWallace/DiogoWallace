@@ -25,14 +25,14 @@ IA aplicada, NL2SQL, mobile, arquiteturas limpas e desenvolvimento web.
 
 <div align="center">
   <!-- GitHub Streak (Ofensiva de Commits) -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Sr-Ryuk&theme=dracula&hide_border=true&stroke=0000&background=282A36" alt="Estatísticas de Streak de Sr-Ryuk" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DiogoWallace&theme=dracula&hide_border=true&stroke=0000&background=282A36" alt="Estatísticas de Streak de Diogo Wallace" />
   
   <br><br>
 
   <!-- GitHub Profile Summary Cards (Linguagens e Status Geral) -->
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sr-Ryuk&theme=dracula" alt="Resumo do Perfil de Sr-Ryuk" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DiogoWallace&theme=dracula" alt="Resumo do Perfil de Diogo Wallace" />
 </div>
 
 ## **Contato**
 
-**GitHub:** [https://github.com/Sr-Ryuk](https://github.com/Sr-Ryuk)
+**GitHub:** [https://github.com/Sr-Ryuk](https://github.com/DiogoWallace)
