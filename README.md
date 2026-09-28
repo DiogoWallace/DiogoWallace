@@ -42,7 +42,7 @@ Plataforma científica interativa para simulações, visualizações e análise 
 
 Monorepo com API REST versionada e frontend em Next.js, com decisões de arquitetura documentadas através de ADRs e foco em extensibilidade e reprodutibilidade.
 
-### [Darwin AI — NL2SQL](https://github.com/DiogoWallace/Bot-AI-NL2SQL-)
+### [Bot AI — NL2SQL](https://github.com/DiogoWallace/Bot-AI-NL2SQL-)
 
 `Python` · `Gemini` · `SQL Server` · `n8n`
 
