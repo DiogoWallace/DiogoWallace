@@ -1,92 +1,128 @@
 # Diogo Wallace
 
-**Full Stack** — backend, dados e IA aplicada. Lavras, MG.
+**Full Stack · Backend · Dados · IA · Automação — Lavras, MG.**
 
-Trabalho no caminho inteiro do dado: da coleta em campo (telemetria de frota) até
-o dashboard e o chatbot que responde em linguagem natural. Backend em Laravel e
-Python, banco em SQL Server e Postgres, e a camada de IA em cima — NL2SQL,
-agentes e automações que tiram o relatório manual do meio do caminho.
+Desenvolvedor focado em construir soluções de ponta a ponta, conectando **aplicações, dados, automações e inteligência artificial**.
 
-O que me interessa não é a stack, é a decisão: por que monorepo e não dois
-repos, por que JSONB e não tabela normalizada, por que a simulação roda no
-cliente. Registro essas decisões — dá pra ler no `docs/adr` do Orbital.
+Trabalho desde a coleta e processamento de dados até APIs, sistemas web, dashboards e integrações. Também exploro IoT e sistemas conectados, integrando hardware e software quando o problema exige ir além de uma aplicação tradicional.
+
+## O que eu faço
+
+- **Backend:** Laravel, PHP, Python, Node.js e APIs REST
+- **Frontend:** TypeScript, React, Next.js e Bootstrap
+- **Dados & BI:** SQL Server, PostgreSQL, MySQL, ETL e Power BI
+- **IA:** LLMs, NL2SQL, agentes e processamento de linguagem natural
+- **Automação & Integrações:** n8n, Webhooks, APIs e sistemas orientados a eventos
+- **IoT:** Arduino, sensores, microcontroladores e telemetria
+- **Infraestrutura:** Docker, Docker Compose, Redis e ambientes reproduzíveis
+- **Mobile:** Flutter e Dart
 
 ## Como eu trabalho
 
-- **Decisões viram documento.** O [Orbital](https://github.com/DiogoWallace/orbital) tem 14 ADRs versionados em `docs/adr` — de `0001-monorepo-dois-deployables` a `0014-reprodutibilidade-de-uma-analise`. Cada escolha de arquitetura tem contexto, alternativas e consequência escritos.
-- **Convenção que o repo cobra sozinho.** Git hooks versionados em `.githooks` + template de commit, ligados com um `make hooks`. O padrão de mensagem não depende de eu lembrar dele.
-- **Prompt é código.** No [NL2SQL](https://github.com/DiogoWallace/Bot-AI-NL2SQL-) os prompts moram em `app/prompts/*.md`, versionados e revisáveis — não enterrados numa f-string no meio da lógica.
-- **Ambiente reprodutível.** Docker Compose com php-fpm 8.4, nginx, Postgres 16 e Redis. `docker compose up -d` e roda igual em qualquer máquina.
+Meu foco não é apenas escolher uma stack, mas entender o problema de ponta a ponta.
+
+Uma solução pode começar na coleta de dados, passar por uma API e banco de dados, ser processada por pipelines ou serviços e terminar em uma aplicação, dashboard ou automação.
+
+Quando necessário, esse fluxo também pode envolver **IA, dispositivos conectados e integrações externas**.
+
+Gosto de transformar decisões técnicas em partes explícitas do projeto. No [Orbital](https://github.com/DiogoWallace/orbital), por exemplo, utilizo ADRs versionados para documentar contexto, alternativas e consequências das decisões de arquitetura.
+
+**Decisões viram documento.**  
+**Convenções viram automação.**  
+**Prompts são tratados como código.**  
+**Ambientes precisam ser reproduzíveis.**
 
 ## Projetos
 
-### [Orbital](https://github.com/DiogoWallace/orbital) — no ar em [orbitalexperiments.com](https://orbitalexperiments.com)
-`Laravel 13` `Next.js 16` `PostgreSQL 16` `Redis` `Docker`
+### [Orbital](https://github.com/DiogoWallace/orbital)
 
-Plataforma científica interativa: simulações, visualizações e análise de dados em
-física, astronomia, engenharia e química.
+`Laravel` · `Next.js` · `PostgreSQL` · `Redis` · `Docker`
 
-Monorepo com dois deployables — API REST versionada (`/api/v1`) e front em
-Next.js usando RSC + BFF, com auth via Sanctum. As decisões que sustentam isso
-estão escritas: **módulo como plugin** para novos experimentos entrarem sem tocar
-no core, **spec do experimento em JSONB** para o schema não travar a cada
-simulação nova, **simulação rodando no cliente** para o servidor não virar
-gargalo de cálculo, e **reprodutibilidade de uma análise** — quem abre um
-resultado consegue chegar nele de novo.
+Plataforma científica interativa para simulações, visualizações e análise de dados em **física, astronomia, engenharia e química**.
+
+Monorepo com API REST versionada e frontend em Next.js, com decisões de arquitetura documentadas através de ADRs e foco em extensibilidade e reprodutibilidade.
 
 ### [Darwin AI — NL2SQL](https://github.com/DiogoWallace/Bot-AI-NL2SQL-)
-`Python` `Gemini` `SQL Server` `n8n`
 
-Chatbot de telemetria que traduz pergunta em português para SQL, consulta a base
-de frota e devolve a resposta pronta. Substitui o "me manda aquele relatório".
+`Python` · `Gemini` · `SQL Server` · `n8n`
 
-Organizado em camadas — `text_to_sql`, `chat` e `summarizer` separados, cada um
-com seu prompt em arquivo próprio, mais `security.py` e allowlist de usuários na
-frente. A tradução para SQL é o passo perigoso: fica isolada, com prompt que dá
-pra revisar em diff.
+Chatbot de telemetria que transforma perguntas em linguagem natural em consultas SQL, processa dados de frota e devolve respostas contextualizadas.
 
-### [Bot de Frotas](https://github.com/DiogoWallace/bot-python)
-`Python`
-
-Monitoramento e alertas automatizados para gestão de frota.
+O projeto explora **NL2SQL, LLMs, segurança, automação e integração com dados corporativos**.
 
 ### [Sistema Clínica](https://github.com/DiogoWallace/clinica)
-`Laravel` `TypeScript`
 
-Gestão completa para clínica de pilates — agenda, pacientes e financeiro.
-Backend em Laravel, interface em TypeScript.
+`Laravel` · `TypeScript`
+
+Sistema para gestão de clínica de fisioterapia e pilates, incluindo **agenda, pacientes, aulas e financeiro**.
+
+### [Bot de Frotas](https://github.com/DiogoWallace/bot-python)
+
+`Python`
+
+Sistema de monitoramento e geração de alertas automatizados para gestão de frota.
 
 ### [ERP Adega](https://github.com/DiogoWallace/erp-lambadega)
+
 `PHP`
 
-Estoque, vendas e financeiro para adegas.
+Sistema para controle de **estoque, vendas e financeiro** voltado para adegas.
 
 ### Dashboards Power BI
-Frota, consumo de combustível, jornada de motorista e financeiro — alimentados
-por ETL próprio sobre SQL Server.
+
+Dashboards voltados para **frota, telemetria, consumo de combustível, jornada de motoristas e financeiro**, utilizando processos de ETL e dados provenientes de SQL Server.
 
 ## Stack
 
-**Backend** Laravel · PHP · CodeIgniter · Python · Node.js
-**Dados** SQL Server · PostgreSQL · MySQL · ETL · Power BI
-**Frontend** TypeScript · Next.js · React · Bootstrap
-**Mobile** Flutter · Dart
-**Infra & Automação** Docker · n8n · Webhooks · APIs REST
+### Backend
 
-## Estudando agora
+`Laravel` · `PHP` · `Python` · `Node.js` · `CodeIgniter`
 
-Arquitetura limpa, NL2SQL e agentes de IA — e como registrar decisão de
-arquitetura de um jeito que o próprio repositório cobre.
+### Frontend
+
+`TypeScript` · `Next.js` · `React` · `Bootstrap`
+
+### Dados & BI
+
+`SQL Server` · `PostgreSQL` · `MySQL` · `ETL` · `Power BI`
+
+### IA
+
+`LLMs` · `NL2SQL` · `Agentes` · `Prompt Engineering` · `Automações`
+
+### IoT & Sistemas Conectados
+
+`Arduino` · `Sensores` · `Microcontroladores` · `Telemetria` · `Alexa`
+
+### Infra & Integrações
+
+`Docker` · `Docker Compose` · `Redis` · `n8n` · `Webhooks` · `APIs REST`
+
+### Mobile
+
+`Flutter` · `Dart`
+
+## Atualmente explorando
+
+**Arquitetura de software, IA aplicada, agentes, NL2SQL, IoT e sistemas distribuídos.**
+
+Tenho interesse principalmente em entender como **software, dados, dispositivos e inteligência artificial podem trabalhar como partes de um mesmo sistema**.
 
 ## GitHub
 
 <div align="center">
+
   <img src="https://streak-stats.demolab.com/?user=DiogoWallace&theme=dracula&hide_border=true&background=282A36" alt="Streak de commits" />
+
+  <br /><br />
 
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DiogoWallace&theme=dracula" alt="Resumo do perfil" />
 
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DiogoWallace&theme=dracula" alt="Linguagens mais usadas, por commit" />
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DiogoWallace&theme=dracula" alt="Estatisticas gerais" />
+  <br /><br />
+
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DiogoWallace&theme=dracula" alt="Linguagens mais usadas por commit" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DiogoWallace&theme=dracula" alt="Estatísticas gerais" />
+
 </div>
 
 ---
