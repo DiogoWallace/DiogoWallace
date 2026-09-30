@@ -34,20 +34,6 @@ Gosto de pensar na solução inteira: da coleta e modelagem de dados à interfac
 | [Bot de Frotas](https://github.com/DiogoWallace/bot-python) | Monitoramento e alertas automatizados de frotas. |
 | [ERP Adega](https://github.com/DiogoWallace/erp-lambadega) | Estoque, vendas e financeiro para adegas. |
 
-Também desenvolvo dashboards de telemetria, abastecimento, jornada de motoristas e indicadores operacionais no Power BI.
-
-## Stack
-
-| Área | Tecnologias |
-|:--|:--|
-| Backend | Laravel · PHP · Python · Node.js · CodeIgniter |
-| Frontend | TypeScript · Next.js · React · Bootstrap |
-| Dados e BI | SQL Server · PostgreSQL · MySQL · ETL · Power BI |
-| IA e automação | LLMs · NL2SQL · Agentes · n8n · Webhooks |
-| IoT | Arduino · Sensores · Microcontroladores · Telemetria |
-| Infraestrutura | Docker · Docker Compose · Redis · APIs REST |
-| Mobile | Flutter · Dart |
-
 ## Atualmente explorando
 
 Arquitetura de software, IA aplicada, agentes, NL2SQL, IoT e sistemas distribuídos — especialmente a integração entre software, dados e dispositivos conectados.
