@@ -22,8 +22,6 @@ Construo soluções que conectam o mundo físico ao digital: dispositivos, telem
 - **IA e automação:** LLMs, NL2SQL, agentes, n8n e integrações.
 - **IoT e infraestrutura:** Arduino, sensores, telemetria, Docker, Redis e Webhooks.
 
-Gosto de pensar na solução inteira: da coleta e modelagem de dados à interface, observabilidade e automação. No [Orbital](https://github.com/DiogoWallace/orbital), documento decisões arquiteturais com ADRs versionados.
-
 ## Projetos
 
 | Projeto | O que exploro |
