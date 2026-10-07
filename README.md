@@ -3,55 +3,75 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./light.svg">
-  <img src="./dark.svg" width="100%" alt="Diogo Wallace — Full Stack, backend, dados, IA, IoT e automação">
+  <img src="./dark.svg" width="100%" alt="Diogo Wallace — Full Stack Developer: Laravel e APIs, Python, dados e automação com IA">
 </picture>
 
-**Full Stack · Backend · Dados · IA · IoT e Automação — Lavras, MG**
+**Full Stack Developer · Laravel & APIs · Python · Data & AI Automation — Lavras, MG**
 
-Construo soluções que conectam o mundo físico ao digital: dispositivos, telemetria, APIs, processamento de dados, dashboards e aplicações inteligentes.
+Desenvolvo sistemas web, APIs e automações que conectam software, dados e dispositivos — do microcontrolador ao dashboard.
 
-[Projetos](#projetos) · [Stack](#stack) · [GitHub](#atividade-no-github) · [Contato](#contato)
+[Projetos](#projetos-em-destaque) · [Como eu trabalho](#como-eu-trabalho) · [Stack](#stack) · [Contato](#contato)
 
 </div>
 
-## O que eu faço
+## Projetos em destaque
 
-- **Backend e sistemas:** Laravel, PHP, Python, Node.js e APIs REST.
-- **Frontend:** TypeScript, React, Next.js e Bootstrap.
-- **Dados:** SQL Server, PostgreSQL, MySQL, ETL e Power BI.
-- **IA e automação:** LLMs, NL2SQL, agentes, n8n e integrações.
-- **IoT e infraestrutura:** Arduino, sensores, telemetria, Docker, Redis e Webhooks.
+### [face-led](https://github.com/DiogoWallace/face-led) — validação facial com prova de vida que acende um LED no Arduino
 
-## Projetos
+Microserviço de biometria facial 1:1 com prova de vida ativa própria, ligado por webhook assinado a uma ponte que comanda um Arduino pela serial.
 
-| Projeto | O que exploro |
+- **Arquitetura hexagonal** com teste que impede o domínio de importar OpenCV, banco ou framework.
+- **Webhook confiável:** outbox transacional, HMAC-SHA256 com timestamp e novas tentativas por cerca de 24 h.
+- **Privacidade por padrão:** template biométrico cifrado com AES-256-GCM, logs sem imagem nem dado pessoal.
+- **Medido, não suposto:** EER de 1,47% no LFW, **377 testes**, **10 ADRs** e uma tabela do que foi e do que não foi verificado.
+
+`Python` `FastAPI` `OpenCV` `PostgreSQL` `Redis` `Docker` `Arduino (C++)`
+
+### [Orbital](https://github.com/DiogoWallace/orbital) — plataforma científica interativa · [no ar](https://orbitalexperiments.com)
+
+Laboratório digital de simulações e análise de dados em física, astronomia e engenharia, com módulos independentes sobre um núcleo comum.
+
+- **Monorepo** com API Laravel 13 e frontend Next.js 16 (RSC + BFF); as simulações rodam no navegador.
+- **Dados reais:** ingestão de curvas de luz do satélite TESS e um classificador de candidatos a exoplaneta treinado sobre 262 alvos do NASA Exoplanet Archive.
+- **Engenharia de produto:** CI com testes, lint e typecheck no back e no front, imagens publicadas no GHCR e deploy em VPS.
+- **Decisões registradas:** 14 ADRs, com as alternativas descartadas.
+
+`Laravel` `Next.js` `TypeScript` `PostgreSQL` `Redis` `Docker` `GitHub Actions`
+
+### [ERP Comercial](https://github.com/DiogoWallace/erp-lambadega) — ERP multi-tenant em produção
+
+ERP para lojas, restaurantes e adegas: cadastros, estoque, PDV, financeiro, auditoria e relatórios.
+
+- **Multi-tenant** por estabelecimento com global scope, UUID v7 em todas as tabelas e RBAC com Spatie Permission.
+- **Vendas orientadas a eventos**, com baixa de estoque por lock atômico e fronteiras de camada checadas pelo Deptrac.
+- **CI/CD** com GitHub Actions: deploy automático em dev e produção via PR `dev → main`.
+- **117 testes** (96 feature tests PHPUnit e 21 Vitest).
+
+`Laravel` `PHP 8.4` `MySQL` `Next.js` `TypeScript` `Docker`
+
+## Também construí
+
+Sistemas em uso por clientes, com código privado:
+
+- **Gestão de clínicas de fisioterapia e pilates** — agenda, pacientes e financeiro.
+- **Automação de deploy de Power BI** — controla a publicação dos relatórios e o cadastro de clientes.
+- **Bots de WhatsApp para gestão de frotas** — consultas de telemetria em SQL Server respondidas no chat ([versão pública](https://github.com/DiogoWallace/bot-python)).
+
+## Como eu trabalho
+
+- **Decisão por escrito:** ADRs com o problema, as alternativas e o motivo da escolha.
+- **Teste antes de dizer que funciona**, e documentação do que ainda não foi verificado.
+- **Ambiente reproduzível:** tudo sobe com Docker Compose, do banco à fila.
+- **Arquitetura que segura mudança:** regra de negócio separada de framework, controllers finos, casos de uso testáveis sem HTTP.
+
+## Stack
+
+| Área | Tecnologias |
 |:--|:--|
-| [Orbital](https://github.com/DiogoWallace/orbital) | Plataforma científica interativa para física, astronomia e análise de dados. |
-| [Bot AI — NL2SQL](https://github.com/DiogoWallace/Bot-AI-NL2SQL-) | Perguntas em linguagem natural transformadas em consultas de telemetria. |
-| [Sistema Clínica](https://github.com/DiogoWallace/clinica) | Gestão de fisioterapia e pilates, incluindo agenda, pacientes e financeiro. |
-| [Bot de Frotas](https://github.com/DiogoWallace/bot-python) | Monitoramento e alertas automatizados de frotas. |
-| [ERP Adega](https://github.com/DiogoWallace/erp-lambadega) | Estoque, vendas e financeiro para adegas. |
-
-## Atualmente explorando
-
-Arquitetura de software, IA aplicada, agentes, NL2SQL, IoT e sistemas distribuídos — especialmente a integração entre software, dados e dispositivos conectados.
-
-## Atividade no GitHub
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=DiogoWallace&theme=dracula&hide_border=true&background=282A36" alt="Sequência de atividade no GitHub" />
-
-<br /><br />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DiogoWallace&theme=dracula" alt="Resumo de atividade do perfil" />
-
-<br /><br />
-
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DiogoWallace&theme=dracula" alt="Linguagens por commits" />
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DiogoWallace&theme=dracula" alt="Estatísticas do GitHub" />
-
-</div>
+| **Principal** | PHP · Laravel · Python · FastAPI · TypeScript · Next.js · React |
+| **Dados** | PostgreSQL · MySQL · SQL Server · Redis · Power BI · ETL |
+| **IA e automação** | LLMs · NL2SQL · n8n · WhatsApp (Meta Cloud API · Evolution API) |
+| **Infra e IoT** | Docker · GitHub Actions · Nginx · Linux · Arduino · Webhooks |
 
 ## Contato
 
