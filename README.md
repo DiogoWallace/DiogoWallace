@@ -32,7 +32,7 @@ Microserviço de biometria facial 1:1 com prova de vida ativa própria, ligado p
 Laboratório digital de simulações e análise de dados em física, astronomia e engenharia, com módulos independentes sobre um núcleo comum.
 
 - **Monorepo** com API Laravel 13 e frontend Next.js 16 (RSC + BFF); as simulações rodam no navegador.
-- **Dados reais:** ingestão de curvas de luz do satélite TESS e um classificador de candidatos a exoplaneta treinado sobre 262 alvos do NASA Exoplanet Archive.
+- **Dados reais:** pipeline que mede 1.170 alvos do satélite TESS e um classificador que separa planeta confirmado de falso positivo com 76,2% de acurácia balanceada, +6,7 pontos sobre a linha de base.
 - **Engenharia de produto:** CI com testes, lint e typecheck no back e no front, imagens publicadas no GHCR e deploy em VPS.
 - **Decisões registradas:** 14 ADRs, com as alternativas descartadas.
 
