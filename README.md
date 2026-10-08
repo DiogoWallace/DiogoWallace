@@ -45,7 +45,7 @@ ERP para lojas, restaurantes e adegas: cadastros, estoque, PDV, financeiro, audi
 - **Multi-tenant** por estabelecimento com global scope, UUID v7 em todas as tabelas e RBAC com Spatie Permission.
 - **Vendas orientadas a eventos**, com baixa de estoque por lock atômico e fronteiras de camada checadas pelo Deptrac.
 - **CI/CD** com GitHub Actions: deploy automático em dev e produção via PR `dev → main`.
-- **117 testes** (96 feature tests PHPUnit e 21 Vitest).
+- **191 testes** (167 PHPUnit e 24 Vitest).
 
 `Laravel` `PHP 8.4` `MySQL` `Next.js` `TypeScript` `Docker`
 
